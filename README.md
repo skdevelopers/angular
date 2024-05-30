@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Angular Homes App
 - Install Angular if you don't have it installed
 
@@ -18,3 +19,7 @@
 - Run the application 
 
   `ng serve`
+=======
+# angular
+Angular Project by Salman@techlify
+>>>>>>> 657cd210b04f56905ac48319ebe981c35d18f5c2
