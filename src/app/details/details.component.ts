@@ -53,8 +53,12 @@ export class DetailsComponent {
         email: new FormControl(''),
     });
     constructor() {
+        this.loadHousingLocation();
+    }
+
+    async loadHousingLocation() {
         const housingLocationId = Number(this.route.snapshot.params['id']);
-        this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
+        this.housingLocation = await this.housingService.getHousingLocationById(housingLocationId);
     }
     submitApplication() {
         this.housingService.submitApplication(
